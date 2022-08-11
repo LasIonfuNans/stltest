@@ -1,4 +1,4 @@
-from stl_test import __version__
+from stltest import __version__
 
 
 def test_version():

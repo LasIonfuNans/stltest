@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "stl_test"
+name = "streamlittest"
 version = "0.1.0"
 description = ""
 authors = ["LasIonfuNans <lasionfunans@gmail.com>"]
@@ -18,7 +18,7 @@ PyAutoGUI = "^0.9.53"
 [tool.poetry.dev-dependencies]
 
 [tool.poetry.scripts]
-stl_test = "stl_test.run_test:kidou"
+stl_test = "stltest.run:kidou"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
