@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "stl_test"
+version = "0.1.0"
+description = ""
+authors = ["LasIonfuNans <lasionfunans@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.11"
+numpy = "^1.23.1"
+streamlit = "^1.11.1"
+plotly = "^5.9.0"
+dash = "^2.6.1"
+scipy = "^1.9.0"
+matplotlib = "^3.5.2"
+PyAutoGUI = "^0.9.53"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+stl_test = "stl_test.run_test:kidou"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
