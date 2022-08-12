@@ -1,17 +1,17 @@
 import streamlit as st
 import plotly.express as px
 import plotly.io as pio
-import subprocess
-import pyautogui
-import os
+# import subprocess
+# import pyautogui
+# import os
 
-def close_window():
-    pyautogui.keyDown('ctrl')
-    pyautogui.press('w')
-    pyautogui.keyUp('ctrl')
-    print("close_window")
-    os._exit(0)
-    st.stop()
+# def close_window():
+#     pyautogui.keyDown('ctrl')
+#     pyautogui.press('w')
+#     pyautogui.keyUp('ctrl')
+#     print("close_window")
+#     os._exit(0)
+#     st.stop()
 
 # data
 data = px.data.iris()
@@ -46,6 +46,6 @@ st.write(
     px.scatter(data, x="sepal_width", y="sepal_length", template=template)
 )
 
-# 終了ボタン
-if st.button('End'):
-    close_window()
+# # 終了ボタン
+# if st.button('End'):
+#     close_window()

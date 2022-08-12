@@ -9,5 +9,9 @@ import os
 def kidou():
 	base = os.path.dirname(os.path.abspath(__file__))
 	# name = os.path.normpath(os.path.join(base, '../app'))
+	print(base)
 	name = os.path.normpath(base)
 	subprocess.run('poetry run streamlit run qiita.py', cwd=base, shell=True)
+
+if __name__ == "__main__":
+	kidou()
