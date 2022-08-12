@@ -7,7 +7,7 @@ def disp():
 	print(base)
 	name = os.path.normpath(base)
 	# subprocess.run('poetry run streamlit run qiita.py', cwd=base, shell=True)
-	subprocess.run('poetry run streamlit run fisrt.py', cwd=base, shell=True)
+	subprocess.run('streamlit run fisrt.py', cwd=base, shell=True)
 	# subprocess.run('poetry run streamlit run ./stltest/first.py', shell=True)
 
 if __name__ == "__main__":
