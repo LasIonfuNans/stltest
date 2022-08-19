@@ -1,11 +1,11 @@
-# PACKAGE = stltest-0.1.0
+# 実行例：make setup version=stltest-0.1.1
 
 setup:
 	# パッケージファイル作成
 	poetry build
 	# ファイルの解凍
-	tar zxvf dist/$(PACKAGE).tar.gz -C ./dist
+	tar zxvf ./dist/$(version).tar.gz -C ./dist
 	# setup.pyのコピー
-	cp dist/$(PACKAGE)/setup.py setup.py
+	cp ./dist/$(version)/setup.py setup.py
 	# 解凍したフォルダの削除
-	rm -rf dist/$(PACKAGE)/
+	rm -rf dist/$(version)/
